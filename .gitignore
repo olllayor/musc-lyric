@@ -1,0 +1,13 @@
+__pycache__/
+.venv/
+.env
+cache.json
+*.webm
+*.wav
+*.mp3
+*.m4a
+node_modules/
+dist/
+*.local
+.DS_Store
+*.log

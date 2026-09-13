@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+html, body {
+  background: #0c0d12;
+  color: #e8e9ee;
+}
+
+.lyric-line {
+  transition: color 0.2s, transform 0.2s, opacity 0.2s;
+}
+.lyric-line.active {
+  color: #fff;
+}
+.lyric-line.past {
+  opacity: 0.45;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.6); }
+  100% { box-shadow: 0 0 0 22px rgba(239, 68, 68, 0); }
+}
+.rec-pulse {
+  animation: pulse-ring 1.2s ease-out infinite;
+}
